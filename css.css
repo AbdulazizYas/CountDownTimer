@@ -1,0 +1,81 @@
+:root{
+  --main-color : #efdf26;
+  --start-color : #43b343;
+  --stop-color : #ff3e3e;
+  --pause-color:#646a92;
+}
+
+*, body{
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  text-align: center;
+  font-family: 'PT Sans',Arial;
+}
+input,button{
+  background: none;
+  border: none;
+}
+button:focus,input:focus {outline:0;}
+input{
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  font-size: 40px;
+  color: var(--main-color);
+  border-bottom: 5px solid var(--main-color);
+}
+button{
+  margin: 5px 30px;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 3px #020202;
+}
+button:first-of-type{
+  background-color: var(--pause-color);
+  color:white;
+  transition: color .2s ease-in-out , background-color .2s ease-in-out;
+}
+button:first-of-type:hover{
+  background-color: white;
+  color:var(--pause-color);
+}
+button:nth-of-type(2){
+  background-color: var(--start-color);
+  color:white;
+  padding: 20px 40px;
+  font-size: 30px;
+  font-weight: 100;
+  transition: color .2s ease-in-out , background-color .2s ease-in-out;
+}
+button:nth-of-type(2):hover{
+  background-color: white;
+  color:var(--start-color);
+}
+button:last-of-type{
+  background-color: var(--stop-color);
+  color:white;
+  transition: color .2s ease-in-out , background-color .2s ease-in-out;
+}
+button:last-of-type:hover{
+  background-color: white;
+  color:var(--stop-color);
+}
+#count{
+  width: 35%;
+  margin: auto;
+  margin-top: 120px;
+  background-color: var(--main-color);
+  padding: 30px 140px;
+  border-radius: 100px;
+  color: #202020;
+  font-size: 100px;
+  font-weight: bold;
+  box-shadow: 5px 0 10px 5px #030303 inset,-5px 0 10px 5px #030303 inset, 0 0 10px #020202
+}
